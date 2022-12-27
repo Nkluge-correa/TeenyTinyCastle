@@ -1,6 +1,6 @@
 # Teeny-Tiny Castle 🏰
 
-[![DOI](https://zenodo.org/badge/524324724.svg)](https://zenodo.org/badge/latestdoi/524324724)[
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7485126.svg)](https://doi.org/10.5281/zenodo.7485126)[
 ![made-with-python](https://camo.githubusercontent.com/f9010d0d18143896d2e496fe0e0c89056acab8229dbdf169f1d3a4759567fe63/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d616465253230776974682d507974686f6e2d3166343235662e737667)](https://www.python.org/)
 
 ![python](https://i.gifer.com/origin/25/25dcee6c68fdb7ac42019def1083b2ef_w200.gif)
