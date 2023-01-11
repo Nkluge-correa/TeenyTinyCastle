@@ -39,6 +39,7 @@ tensorflow
 visualkeras
 scikit_learn
 torchvision
+keras_nlp
 tensorflow_datasets
 accelerate
 scikit_image
@@ -62,6 +63,7 @@ secml
 facets_overview
 pandas_profiling
 google_play_scraper
+beautifulsoup4
 
 ```
 
