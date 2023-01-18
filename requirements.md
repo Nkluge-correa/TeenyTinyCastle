@@ -48,7 +48,8 @@ opencv-python
 hyperas
 pefile
 capstone
-gym
+gymnasium
+pygame
 alibi
 dalex
 lime
