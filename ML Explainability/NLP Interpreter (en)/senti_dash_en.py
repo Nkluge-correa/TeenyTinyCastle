@@ -3,12 +3,9 @@ import dash
 import time
 import string
 import unidecode
-import numpy as np
+from tensorflow import keras
 import dash_bootstrap_components as dbc
 from dash import dcc, html, Output, Input, State
-from dash.dependencies import Input, Output, State
-import tensorflow as tf
-from tensorflow import keras
 from keras_preprocessing.sequence import pad_sequences
 from keras.preprocessing.text import Tokenizer, tokenizer_from_json
 
@@ -78,16 +75,8 @@ app.title = 'Sentiment Classifier'
 app.layout = dbc.Container(
     fluid=True,
     children=[
-        html.H1('Sentiment Classifier  ', style={'color': '#242020',
-                                                 'font-style': 'bold',
-                                                 'margin-top': '15px',
-                                                 'margin-left': '15px',
-                                                 'display': 'inline-block'}),
-        html.H1('  🤖', style={'color': '#2a9fd6',
-                              'font-style': 'bold',
-                              'margin-top': '15px',
-                              'margin-left': '15px',
-                              'display': 'inline-block'}),
+        html.Div([html.H1('Sentiment Classifier 🤖', style={
+            'margin-top': '20px'}),], style={'textAlign': 'center'}),
         html.Hr(),
         dbc.Row([
             dbc.Col([
@@ -154,9 +143,7 @@ def run_senti_model(n_clicks, n_submit, user_input, sentiment_analysis):
         padded_text = keras.preprocessing.sequence.pad_sequences(
             sequence, maxlen=256, truncating='post')
 
-        prediction = model.predict(padded_text)
-
-        prediction = model.predict(padded_text)
+        prediction = model.predict(padded_text, verbose=0)
 
         pred_neg = 1 - prediction[0][0]
         pred_neg = '{:,.2f}'.format(pred_neg * 100) + ' %'
