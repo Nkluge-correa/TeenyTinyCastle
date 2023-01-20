@@ -31,17 +31,14 @@ transformers
 diffusers
 cleantext
 Unidecode
-langdetect
 textblob
 textattack
 torch
 tensorflow
 visualkeras
 scikit_learn
-torchvision
 keras_nlp
 tensorflow_datasets
-accelerate
 scikit_image
 scipy
 opencv-python
