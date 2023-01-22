@@ -4,11 +4,11 @@ import dash_bootstrap_components as dbc
 import torch
 import dash
 
-model = torch.load('Distilgpt2.pt')
+model = torch.load('models\Distilgpt2.pt')
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model.to(device)
 
-tokenizer = AutoTokenizer.from_pretrained('Distilgpt2_tokenizer')
+tokenizer = AutoTokenizer.from_pretrained('models\Distilgpt2_tokenizer')
 generator = pipeline('text-generation', model=model, tokenizer=tokenizer,
                      device=0 if torch.cuda.is_available() else -1)
 
@@ -37,7 +37,7 @@ def generate_text(string, length_choice, temp, respose_num, top, rep_penalty):
 modal_evaluation = html.Div(
     [
         dbc.Button('Report', id='report-button', n_clicks=0,
-                   color='warning', disabled=True),
+                   color='primary', disabled=True),
         dbc.Modal(
             [
                 dbc.ModalHeader(dbc.ModalTitle(
@@ -65,7 +65,7 @@ modal_evaluation = html.Div(
                     'text-justify': 'inter-word'}),
                 dbc.ModalFooter(
                     html.Div([dbc.Button('Close', id='close-body-scroll', className='ms-auto',
-                             n_clicks=0, color='warning', outline=False)], style={'display': 'inline-block'})
+                             n_clicks=0, color='light', outline=False)], style={'display': 'inline-block'})
                 ),
             ],
             id='modal-body-scroll',
@@ -82,7 +82,7 @@ modal_evaluation = html.Div(
 modal_info = html.Div(
     [
         dbc.Button('Information', id='info-button',
-                   n_clicks=0, outline=True, color='warning'),
+                   n_clicks=0, outline=False, color='primary'),
         dbc.Modal(
             [
                 dbc.ModalHeader(dbc.ModalTitle(dcc.Markdown(
@@ -231,7 +231,7 @@ modal_info = html.Div(
                                ]),
                 dbc.ModalFooter(
                     html.Div([dbc.Button('Close', id='close-body-scroll-2', className='ms-auto',
-                             n_clicks=0, color='warning', outline=False)], style={'display': 'inline-block'})
+                             n_clicks=0, color='light', outline=False)], style={'display': 'inline-block'})
                 ),
             ],
             id='modal-body-scroll-2',
@@ -303,7 +303,7 @@ app.layout = dbc.Container(
                                         'always_visible': True},
                                id='repetition-slider'),
                     html.Br(),
-                ], color='warning', outline=True, style={'margin-left': '15px'})
+                ], color='dark', outline=True, style={'margin-left': '15px'})
             ], md=4),
             dbc.Col([
                 dcc.Textarea(
@@ -312,12 +312,13 @@ app.layout = dbc.Container(
                     style={'width': '100%', 'height': 200},
                 ),
                 html.Div([dbc.Button('Submit', id='submit-button', n_clicks=0,
-                         outline=False, color='warning')], style={'text-align': 'right'}),
+                         outline=False, color='primary')], style={'text-align': 'right'}),
                 dcc.Loading(id='loading_0', type='circle', children=[html.Div(id='textarea-output-state', style={'whiteSpace': 'pre-line',
                                                                                                                  'height': '200px',
                                                                                                                  'overflowY': 'scroll',
                                                                                                                  'margin-top': '5px',
-                                                                                                                 'margin-bottom': '5px'})]),
+                                                                                                                 'margin-bottom': '5px',
+                                                                                                                 })]),
                 modal_evaluation,
             ], md=8),
         ]),
