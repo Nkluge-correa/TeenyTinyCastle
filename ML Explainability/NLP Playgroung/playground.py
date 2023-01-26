@@ -37,24 +37,25 @@ def generate_text(string, length_choice, temp, respose_num, top, rep_penalty):
 offcanvas_evaluation = html.Div(
     [
         dbc.Button(['Report ', html.I(className="bi bi-flag-fill")], id='evaluation-button', n_clicks=0,
-                   disabled=True, outline=True, color='light', style={'width': '100%', 'border-radius': '5px'}),
+                   disabled=True, outline=True, color='light', style={'width': '100%', 'border-radius': '5px', 'margin-top': '5px'}),
         dbc.Offcanvas(
             [
-                dcc.Markdown('#### Your prompt was:'), html.Br(),
+                dcc.Markdown('**Your prompt was:**'), html.Br(),
                 html.P('', id='prompt', style={
-                    'font-size': 20}),
+                    'font-size': 16, 'text-align': 'justify',
+                    'text-justify': 'inter-word'}),
                 dcc.Markdown('---'),
                 dcc.Markdown(
-                    '#### The generated response(s) was:'), html.Br(),
+                    '**The generated response(s) was:**'), html.Br(),
                 dcc.Markdown('', id='response',
-                             style={'font-size': 20}),
+                             style={'font-size': 16, 'text-align': 'justify',
+                                    'text-justify': 'inter-word'}),
                 dcc.Markdown('---'),
                 dcc.Markdown(
                     """
-                    #### Evaluate the model's response(s) in the form below
+                    **Evaluate the model's response(s) in the form below 👇**
                     
-                    ---
-                    """),
+                    """, style={'text-align': 'center'}),
                 html.Iframe(src="https://forms.gle/sdAqtx3QHGf6YAVE9", style={
                             "width": "100%", 'height': 1360, 'overflowY': 'scroll'})
             ],
@@ -248,12 +249,12 @@ app = dash.Dash(__name__,
                 external_stylesheets=[dbc.themes.SLATE, dbc.icons.BOOTSTRAP])
 
 server = app.server
-app.title = 'Alignment Playground 🤖'
+app.title = 'Alignment Playground'
 
 app.layout = dbc.Container(
     fluid=True,
     children=[
-        html.Div([html.H1('Alignment Playground 🤖 🦾 📚'),],
+        html.Div([dcc.Markdown('# `Alignment Playground`')],
                  style={'textAlign': 'center',
                         'margin-top': '20px'}),
         html.Div([modal_info], style={
@@ -261,20 +262,14 @@ app.layout = dbc.Container(
         dbc.Row([
             dbc.Col([
                 dbc.Card([
-                    dcc.Markdown('**`Minimum Response Length`**',
+                    html.Br(),
+                    dcc.Markdown('**`Response Length`**',
                                  style={'margin-left': '15px', 'margin-top': '5px'}),
                     html.Div([
-                        dcc.Slider(10, 50, 10,
-                                   value=10,
-                                   id='min-length-slider'),
+                        dcc.Slider(50, 500, 50,
+                                   value=50,
+                                   id='length-slider'),
                     ], style={'margin-left': ' 5px', 'margin-bottom': '5px'}),
-                    dcc.Markdown('**`Maximum Response Length`**',
-                                 style={'margin-left': '15px', }),
-                    html.Div([
-                        dcc.Slider(100, 500, 100,
-                                   value=100,
-                                   id='max-length-slider'),
-                    ], style={'margin-left': '5px', 'margin-bottom': '5px'}),
                     dcc.Markdown('**`Number of Responses`**',
                                  style={'margin-left': '15px'}),
                     html.Div([
@@ -308,21 +303,23 @@ app.layout = dbc.Container(
                                             'always_visible': True},
                                    id='repetition-slider'),
                     ], style={'margin-left': '5px', 'margin-bottom': '10px'}),
-                ], color='dark', outline=False, style={'margin-left': '15px'})
+                ], color='dark', outline=False, style={'margin-left': '15px', 'height': '510px'}),
             ], md=4),
             dbc.Col([
                 dcc.Textarea(
                     id='textarea-state',
                     value='',
-                    style={'width': '100%', 'height': 200},
+                    style={'width': '100%', 'height': 150},
                 ),
                 html.Div([dbc.Button(['Submit ', html.I(className="bi bi-send-fill")], id='submit-button', n_clicks=0,
                          outline=True, color='light', style={'width': '100%', 'border-radius': '5px'})]),
                 dcc.Loading(id='loading_0', type='circle', children=[html.Div(id='textarea-output-state', style={'whiteSpace': 'pre-line',
-                                                                                                                 'height': '200px',
+                                                                                                                 'height': '250px',
                                                                                                                  'overflowY': 'scroll',
-                                                                                                                 'margin-top': '5px',
-                                                                                                                 'margin-bottom': '5px',
+                                                                                                                 'padding': '15px',
+                                                                                                                 'font-size': 16,
+                                                                                                                 'text-align': 'justify',
+                                                                                                                 'text-justify': 'inter-word'
                                                                                                                  })]),
                 offcanvas_evaluation
             ], md=8),
@@ -342,7 +339,7 @@ app.layout = dbc.Container(
     Input('submit-button', 'n_clicks_timestamp'),
 
     [State('textarea-state', 'value'),
-     State('min-length-slider', 'value'),
+     State('length-slider', 'value'),
      State('response-slider', 'value'),
      State('temperature-slider', 'value'),
      State('topk-slider', 'value'),

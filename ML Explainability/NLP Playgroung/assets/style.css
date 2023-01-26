@@ -71,7 +71,7 @@ a:active {
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 20em }
+  to { width: 13em }
 }
 
 /* The typewriter cursor effect */
