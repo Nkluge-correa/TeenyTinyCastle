@@ -1,25 +1,34 @@
+
+/* Ttyping effect for the title */
+h1 {
+  overflow: hidden; 
+  border-right: .15em solid #dc3d87; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em;
+  animation: 
+    typing 4s steps(25) 1s 1 normal both,
+    blink-caret 500ms steps(25) infinite normal;
+}
+
 /* unvisited link */
 a:link {
   color: #dc3d87;
-  text-decoration: none;
 }
 
 /* visited link */
 a:visited {
   color: #dc3d87;
-  text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
   color: #dc3d87;
-  text-decoration: none;
 }
 
 /* selected link */
 a:active {
   color: #dc3d87;
-  text-decoration: none;
 }
 
 /* Graph Control Objects ––––––––––––––––––––––––––––––––––––––––––––––––––*/
@@ -44,17 +53,29 @@ a:active {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #e9ecef !important; 
+  background: #aaaaaa !important; 
   border-radius: 3px; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #e9ecef !important; 
+  background: #aaaaaa !important; 
 }
 
 /* width */
 ::-webkit-scrollbar {
   width: 10px !important;
   display: block !important;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 20em }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from{border-right-color: #dc3d87;}
+  to{border-right-color: transparent;}
 }
