@@ -13,10 +13,11 @@ from keras.preprocessing.text import Tokenizer, tokenizer_from_json
 model = keras.models.load_model('models\senti_model_sigmoid_portuguese.h5')
 
 
-with open('models\\tokenizer_senti_model_portuguese.json') as f:
-    data = json.load(f)
+with open('models\\tokenizer_senti_model_portuguese.json') as fp:
+    data = json.load(fp)
     tokenizer = tokenizer_from_json(data)
     word_index = tokenizer.word_index
+    fp.close()
 
 
 def textbox(text, box='other'):
