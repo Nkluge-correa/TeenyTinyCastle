@@ -58,7 +58,6 @@ codecarbon
 scikit-image
 aif360
 secml
-facets_overview
 pandas_profiling
 google_play_scraper
 beautifulsoup4

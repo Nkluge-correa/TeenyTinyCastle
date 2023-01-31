@@ -77,6 +77,7 @@ Join [AIRES at PUCRS](https://en.airespucrs.org/contato).
 ## Machine Learning Fairness ⚖️
 
 - **Learn how to measure the "fairness" of an ML model** by using [fairness metrics in the _Credit Cart Dataset_](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/bbe9c0a77499fa68de7c6d53bf5ef7e0b43a25e0/ML%20Fairness/fair_metrics_Credit_card_approval.ipynb).
+- **When dealing with certain datasets, like the `Adult Census Dataset`** we learn that [interpreting fairness metrics, and choosing which one to use](xxx), can be a challenge.
 - Use the [AIF360](https://aif360.mybluemix.net/) library to **correct a dataset** (_- the Hogwarts case -_) using the [Disparate Impact Remover](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/bbe9c0a77499fa68de7c6d53bf5ef7e0b43a25e0/ML%20Fairness/disparate_impact_remove_Hogwarts.ipynb).
 - Learn how to apply the [Ceteris paribus principle](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/bbe9c0a77499fa68de7c6d53bf5ef7e0b43a25e0/ML%20Fairness/ceteris_paribus_profiles.ipynb) to create a "**_What-if_**" model. Evaluate a classifier using **Counterfactual Fairness**.
 
@@ -98,19 +99,17 @@ Join [AIRES at PUCRS](https://en.airespucrs.org/contato).
 
 ## How to cite this repository 😊
 
-```Markdown
-
+```markdown
 @misc{teenytinycastle,
-  doi = {10.5281/zenodo.7112065},
-  url = {https://github.com/Nkluge-correa/teeny-tiny_castle},
-  author = {Nicholas Kluge Corr{\^e}a},
-  title = {Teeny-Tiny Castle},
-  year = {2022},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  note = {Last updated 31 January 2023},
+doi = {10.5281/zenodo.7112065},
+url = {https://github.com/Nkluge-correa/teeny-tiny_castle},
+author = {Nicholas Kluge Corr{\^e}a},
+title = {Teeny-Tiny Castle},
+year = {2022},
+publisher = {GitHub},
+journal = {GitHub repository},
+note = {Last updated 01 February 2023},
 }
-
 ```
 
 ---
