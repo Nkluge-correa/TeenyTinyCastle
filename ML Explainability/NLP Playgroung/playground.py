@@ -4,11 +4,11 @@ import dash_bootstrap_components as dbc
 import torch
 import dash
 
-model = torch.load('models\Distilgpt2.pt')
+model = torch.load('Distilgpt2.pt')
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model.to(device)
 
-tokenizer = AutoTokenizer.from_pretrained('models\Distilgpt2_tokenizer')
+tokenizer = AutoTokenizer.from_pretrained('Distilgpt2_tokenizer')
 generator = pipeline('text-generation', model=model, tokenizer=tokenizer,
                      device=0 if torch.cuda.is_available() else -1)
 

@@ -4,7 +4,7 @@ Generated at: _25/12/2022_
 
 ## CARBON FOOTPRINT
 
-A carbon footprint is the total greenhouse gas (GHG) emissions caused by an individual, event, organization, service, place or product, expressed as carbon dioxide equivalent ($CO_2e$). Greenhouse gases, including the carbon-containing gases carbon dioxide and methane , can be emitted through the burning of fossil fuels , land clearance, and the production and consumption of food, manufactured goods, materials, wood, roads, buildings, transportation, and other services.
+A carbon footprint is the total greenhouse gas (GHG) emissions caused by an individual, event, organization, service, place or product, expressed as carbon dioxide equivalent ($CO_2$). Greenhouse gases, including the carbon-containing gases carbon dioxide and methane , can be emitted through the burning of fossil fuels , land clearance, and the production and consumption of food, manufactured goods, materials, wood, roads, buildings, transportation, and other services.
 
 Modern AI models can consume a massive amount of energy during their training and fine-tuning phase, and these energy requirements are growing at a breathtaking rate. Researchers from the University of Massachusetts [[1](references)], Amherst, conducted a life cycle analysis for training several typical big AI models in a recent publication. They discovered that the procedure may produce almost $626,000$ pounds of $CO_2$ equivalent.
 
@@ -39,19 +39,19 @@ tracker.stop()
 
 ## $CO_2$ Emission Results
 
-|**Duration (Seconds)**|**Emission (KgCO2)**|**Emission Rate (KtCO2/Year)**|**CPU Power (Watts)**|
-|--------------------------------|-------------------------------------|------------------------------------|--------------------------------|
-| 1192.956553|0.001056|0.000885|14.0|
-|**GPU Power (Watts)**|**RAMPower (Watts)**|**Power Consumption (CPU - kWh)**|**Power Consumption (GPU - kWh)**|
-|0.0| 11.905804|0.004639|0.0|
-|**Power Consumption (RAM - kWh)**|**Total Consumption (kWh)**|**Country**| **ISO**|
-|0.003942|0.008581|Brazil|BRA|
-|**Region**| **Cloud Provider**| **Provider's Region**|**OS**|
-|rio grande do sul| nan| nan|Windows-10-10.0.19041-SP0|
-|**Python Version**| **No. of Processors**|**Provider's CPU Model**| **No. of GPUs**|
-|3.8.0|8|11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz|1|
-|**GPU Model**|**RAM Memory Size (GB)**| **Tracking Mode**|**Cloud-Processed**|
-|1 x NVIDIA GeForce MX450| 31.748809814453125|machine| N|
+| **Duration (Seconds)**            | **Emission (KgCO2)**        | **Emission Rate (KtCO2/Year)**                 | **CPU Power (Watts)**             |
+| --------------------------------- | --------------------------- | ---------------------------------------------- | --------------------------------- |
+| 1192.956553                       | 0.001056                    | 0.000885                                       | 14.0                              |
+| **GPU Power (Watts)**             | **RAMPower (Watts)**        | **Power Consumption (CPU - kWh)**              | **Power Consumption (GPU - kWh)** |
+| 0.0                               | 11.905804                   | 0.004639                                       | 0.0                               |
+| **Power Consumption (RAM - kWh)** | **Total Consumption (kWh)** | **Country**                                    | **ISO**                           |
+| 0.003942                          | 0.008581                    | Brazil                                         | BRA                               |
+| **Region**                        | **Cloud Provider**          | **Provider's Region**                          | **OS**                            |
+| rio grande do sul                 | nan                         | nan                                            | Windows-10-10.0.19041-SP0         |
+| **Python Version**                | **No. of Processors**       | **Provider's CPU Model**                       | **No. of GPUs**                   |
+| 3.8.0                             | 8                           | 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz | 1                                 |
+| **GPU Model**                     | **RAM Memory Size (GB)**    | **Tracking Mode**                              | **Cloud-Processed**               |
+| 1 x NVIDIA GeForce MX450          | 31.748809814453125          | machine                                        | N                                 |
 
 ## REFERENCES
 

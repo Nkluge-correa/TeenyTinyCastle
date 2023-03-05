@@ -1,4 +1,4 @@
-#-----------------------------------------------------------------------------------------#
+# -----------------------------------------------------------------------------------------#
 #
 # Virus Total Hashes script
 #
@@ -6,7 +6,7 @@
 # Author: MitulNarotam
 # Source: https://github.com/MitulNarotam/Practical_Security
 #
-#-----------------------------------------------------------------------------------------#
+# -----------------------------------------------------------------------------------------#
 
 import requests
 import argparse
@@ -15,7 +15,7 @@ import time
 import json
 
 # enter your private key here from virus total
-key = 'enter your private key here'
+key = 'API key here'
 
 # validate hash passed by user by checking its length
 
