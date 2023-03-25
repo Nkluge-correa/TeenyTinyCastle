@@ -31,7 +31,17 @@ TARGET = ['sales']
 
 def create_dataframe(list1, list2):
     """
-    Creates a dataframe form two arrays.
+    Create a Pandas DataFrame from two lists.
+
+    Parameters:
+
+        list1 (list): A list of dates.
+        list2 (list): A list of sales figures.
+    Returns:
+
+        df (Pandas DataFrame): A DataFrame object containing 
+        two columns: 'dates' and 'sales', with each column 
+        representing the corresponding input list.
     """
     data = {'dates': list1, 'sales': list2}
 
@@ -42,13 +52,16 @@ def create_dataframe(list1, list2):
 
 def create_sales_features(df):
     """
-    Creates a copy of the input df, and
-    calculates the difference in sales 
-    7 days back, and one year back. The 
-    second line puts all values higher than 
-    mean * (std * 3) equal to this value. It also
-    creates features to log the moving average
-    of sales in a one-week and two-week window.
+    Creates new features based on the `sales` column 
+    of the given DataFrame.
+
+    Args:
+        df (pandas.DataFrame): The DataFrame to create 
+        features for.
+
+    Returns:
+        pandas.DataFrame: A new DataFrame with the original 
+        columns and additional columns for each feature created.
     """
     df = df.copy()
 
@@ -75,10 +88,17 @@ def create_sales_features(df):
 
 def create_time_features(df):
     """
-    Creates a copy of the input df, turns
-    the index (should come as dates) into a
-    `datetime format`, and gives you back
-    a DataFrame with all time features.
+    Extracts various time-related features from a DataFrame 
+    containing time-series data and returns the updated DataFrame.
+
+    Args:
+        - df (pandas.DataFrame): The DataFrame containing time-series 
+        data to process. This DataFrame must have a 'dates' column 
+        with datetime values.
+
+    Returns:
+        - pandas.DataFrame: The updated DataFrame with additional 
+        time-related features added as columns.
     """
 
     df = df.copy()
@@ -100,9 +120,21 @@ def create_time_features(df):
 
 def scale_dataset(df):
     """
-    This fuction is used to scale all feature values.
-    It transforms each feature so that it has a 
-    mean of 0 and a standard deviation of 1. 
+    This function is used to scale all feature values 
+    of a given dataset. It performs feature scaling 
+    which transforms each feature so that it has a mean 
+    of 0 and a standard deviation of 1.
+
+    Parameters:
+
+        - df : pandas DataFrame The input dataset that needs 
+        to be scaled. It should contain columns for features 
+        and a target column.
+
+    Returns:
+
+        - df : pandas DataFrame A new DataFrame with scaled 
+        feature values and original product_id and sales columns. 
     """
 
     df = df.copy()
@@ -124,9 +156,14 @@ def scale_dataset(df):
 
 def train_model(df):
     """
-    Trains an XGBoost Regression Model.
-    """
+    Trains a gradient boosting regression model on the input DataFrame.
 
+    Args:
+        df: A pandas DataFrame containing two columns, 'dates' and 'sales'.
+
+    Returns:
+        A trained XGBoost model.
+    """
     model = xgb.XGBRegressor(n_estimators=1000, booster='gbtree',
                              max_depth=2,
                              learning_rate=0.1)
@@ -147,16 +184,20 @@ def train_model(df):
 
 def generate_forecast(model, df, ahead):
     """
-    This functions call the original dataframe, sets
-    the `dates` columns as the index and turns the
-    index into `datetime`. After, it loops for a range
-    equal to `ahead`. For each iteration. It creates the
-    features dataframe with one additional day (a future day),
-    and uses the lag features to predict the value of this day.
-    In the end, we append this day on the bottom of the seed 
-    `df` and repeat. The function returns the future
-    predictions, and statistical information about the 
-    distribution of sales.
+    Generates a forecast for future sales based 
+    on a time-series dataframe.
+
+    Parameters:
+    -----------
+    df: pandas.DataFrame
+        A time-series dataframe with dates as index and sales as a column.
+    ahead: int
+        The number of future periods to forecast.
+
+    Returns:
+    --------
+    pandas.DataFrame
+        A dataframe with the forecasted sales for the next `ahead` periods.
     """
 
     df = df.set_index('dates')
@@ -188,8 +229,25 @@ def generate_forecast(model, df, ahead):
 
 def api_call(list1, list2, ahead):
     """
-    This fuction ties all othr fuctions together and
-    generates two lists ([dates], [sales]).
+    This function combines the other functions in this 
+    module to generate a sales forecast
+
+    Parameters:
+    -----------
+        `list1` and `list2` are lists of equal length containing 
+        dates and sales values respectively.
+
+        `ahead` is the number of time units to forecast ahead, 
+        which should be a positive integer.
+
+    Returns
+    -----------
+
+    A tuple of three items:
+        - a list of forecasted dates in the format "YYYY-MM-DD"
+        - a list of forecasted sales values
+        - a dictionary of statistical values for the sales data, including mean, minimum,
+            maximum, variance, and standard deviation.
     """
     df = create_dataframe(list1, list2)
 
