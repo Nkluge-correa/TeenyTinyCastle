@@ -20,14 +20,6 @@ should be part of the requirements described
 by the `requirements.txt` from this repository.
 """
 
-FEATURES = ['difference_1', 'difference_2', 'difference_3',
-            'difference_4', 'difference_5', 'difference_6',
-            'difference_7', 'moving_average_week',
-            'moving_average_two_weeks', 'difference_year',
-            'day_of_week', 'day_of_year', 'quarter', 'month', 'year']
-
-TARGET = ['sales']
-
 
 def create_dataframe(list1, list2):
     """
@@ -61,7 +53,12 @@ def create_sales_features(df):
 
     Returns:
         pandas.DataFrame: A new DataFrame with the original 
-        columns and additional columns for each feature created.
+        columns and additional columns for each feature created:
+            - difference in sales from 1 to 7 days back.
+            - difference in sales from 28 days back.
+            - difference in sales from 366 days back.
+            - moving average from a 1 week window.
+            - moving average from a 2 week window.
     """
     df = df.copy()
 
@@ -71,13 +68,15 @@ def create_sales_features(df):
     previous = df.sales.shift(1)
     df['difference_1'] = df.sales - previous
 
+    for i in range(1, 7):
+        column = 'difference_' + str(i+1)
+        df[column] = df['difference_1'].shift(i)
+
     df['moving_average_week'] = df.sales.rolling(window=7).mean()
 
     df['moving_average_two_weeks'] = df.sales.rolling(window=14).mean()
 
-    for i in range(1, 7):
-        column = 'difference_' + str(i+1)
-        df[column] = df['difference_1'].shift(i)
+    df['difference_month'] = df.sales - df.sales.shift(28)
 
     df['difference_year'] = df.sales - df.sales.shift(366)
 
@@ -98,9 +97,13 @@ def create_time_features(df):
 
     Returns:
         - pandas.DataFrame: The updated DataFrame with additional 
-        time-related features added as columns.
+        time-related features added as columns:
+            - day of week.
+            - day of year.
+            - quarter of the year.
+            - month of the year.
+            - year.
     """
-
     df = df.copy()
 
     df = df.set_index('dates')
@@ -120,36 +123,46 @@ def create_time_features(df):
 
 def scale_dataset(df):
     """
-    This function is used to scale all feature values 
-    of a given dataset. It performs feature scaling 
-    which transforms each feature so that it has a mean 
-    of 0 and a standard deviation of 1.
+    Preprocesses a given DataFrame by scaling its numerical features using a MinMaxScaler, 
+    one-hot encoding its categorical features, and concatenating them together with the 
+    product ID and target variables.
 
-    Parameters:
+    Parameters
+    ----------
+    df : pandas.DataFrame
+        The DataFrame to be preprocessed.
 
-        - df : pandas DataFrame The input dataset that needs 
-        to be scaled. It should contain columns for features 
-        and a target column.
-
-    Returns:
-
-        - df : pandas DataFrame A new DataFrame with scaled 
-        feature values and original product_id and sales columns. 
+    Returns
+    -------
+    pandas.DataFrame
+        The preprocessed DataFrame with scaled numerical features, one-hot encoded 
+        categorical features, and concatenated product ID and target variables.
     """
 
     df = df.copy()
 
-    features = df.drop(['sales'], axis=1)
+    numerical_features = df[['difference_1', 'difference_2', 'difference_3',
+                             'difference_4', 'difference_5', 'difference_6', 'difference_7',
+                             'moving_average_week', 'moving_average_two_weeks', 'difference_month',
+                             'difference_year']]
+
+    categorical_features = df[['day_of_week', 'day_of_year',
+                               'quarter', 'month', 'year']]
+
+    categorical_features = pd.get_dummies(categorical_features,
+                                          columns=['day_of_week', 'day_of_year',
+                                                   'quarter', 'month', 'year'])
+
     target = df[['sales']]
 
-    scaler.fit(features)
+    scaler.fit(numerical_features)
 
-    features = pd.DataFrame(
-        scaler.transform(features),
-        columns=features.columns,
-        index=features.index)
+    numerical_features = pd.DataFrame(
+        scaler.transform(numerical_features),
+        columns=numerical_features.columns,
+        index=numerical_features.index)
 
-    df = pd.concat([target, features], axis=1)
+    df = pd.concat([target, numerical_features, categorical_features], axis=1)
 
     return df
 
@@ -172,8 +185,8 @@ def train_model(df):
     train_df = create_time_features(train_df)
     train_df = scale_dataset(train_df)
 
-    x_features = train_df[FEATURES]
-    y_target = train_df[TARGET]
+    x_features = train_df[train_df.columns[1:]]
+    y_target = train_df['sales']
 
     model.fit(x_features, y_target,
               eval_set=[(x_features, y_target)],
@@ -199,6 +212,10 @@ def generate_forecast(model, df, ahead):
     pandas.DataFrame
         A dataframe with the forecasted sales for the next `ahead` periods.
     """
+    df = df.copy()
+
+    df_time = create_time_features(df)
+    monthly_sales = pd.DataFrame(df_time.groupby('month')['sales'].mean())
 
     df = df.set_index('dates')
     df.index = pd.to_datetime(df.index)
@@ -206,23 +223,24 @@ def generate_forecast(model, df, ahead):
     for i in range(ahead):
 
         future_date = df.index.max() + timedelta(days=1)
-
         future_dates = pd.date_range(start=future_date.strftime("%Y-%m-%d"),
                                      end=future_date.strftime("%Y-%m-%d"))
 
-        future_df = pd.DataFrame(index=future_dates)
-        present_df = df[['sales']].copy()
+        future_df = pd.DataFrame({"sales": None}, index=future_dates)
+        future_df['sales'] = monthly_sales.loc[future_df.index.month[0]]['sales']
 
-        df_with_future = pd.concat([present_df, future_df]).reset_index().rename(
-            columns={"index": "dates"}).fillna(0)
+        df_with_future = pd.concat([df, future_df]).reset_index().rename(
+            columns={"index": "dates"})
         df_with_future = create_sales_features(df_with_future)
         df_with_future = create_time_features(df_with_future)
+        df_with_future = scale_dataset(df_with_future)
 
-        pred = model.predict(df_with_future.tail(1)[FEATURES])
+        pred = model.predict(df_with_future.tail(1)[
+                             df_with_future.columns[1:]])
 
-        future_df['sales'] = abs(np.round(pred))
+        future_df['sales'] = abs(pred)
 
-        df = pd.concat([present_df, future_df])
+        df = pd.concat([df, future_df])
 
     return df.tail(ahead)
 
