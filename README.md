@@ -100,16 +100,16 @@ Join [AIRES at PUCRS](https://en.airespucrs.org/contato).
 
 ## Cite as 🤗
 
-```markdown
+```latex
 @misc{teenytinycastle,
-doi = {10.5281/zenodo.7112065},
-url = {https://github.com/Nkluge-correa/teeny-tiny_castle},
-author = {Nicholas Kluge Corr{\^e}a},
-title = {Teeny-Tiny Castle},
-year = {2023},
-publisher = {GitHub},
-journal = {GitHub repository},
-note = {Last updated 07 April 2023},
+    doi = {10.5281/zenodo.7112065},
+    url = {https://github.com/Nkluge-correa/teeny-tiny_castle},
+    author = {Nicholas Kluge Corr{\^e}a},
+    title = {Teeny-Tiny Castle},
+    year = {2023},
+    publisher = {GitHub},
+    journal = {GitHub repository},
+    note = {Last updated 07 April 2023},
 }
 ```
 
