@@ -56,7 +56,7 @@ Join [AIRES at PUCRS](https://en.airespucrs.org/contato).
 
 - If you want to [create your own CNN to explore](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/fa17764aa8800c388d0d298b750c686757e0861e/ML%20Explainability/CV%20Interpreter/CNN_model_maker.ipynb) (using the below notebooks), you can use this simple `CNN_model_maker` for the `CIFAR-10` dataset (_this may take a while if you don't have a GPU. If you don't have GPU, limit your training phase to < 50 epochs_).
 - Learn to explore and interpret the inner workings of a `CNN` by using [feature visualization techniques](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/fa17764aa8800c388d0d298b750c686757e0861e/ML%20Explainability/CV%20Interpreter/CNN_feature_visualization.ipynb).
-- Create [maximum activations for the imagnet classes](xxx) using `MobileNetV2` and feature extraction techniques.
+- Create [maximum activations for the imagnet classes](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/b54bee4a191d151d682d380886deb01fc21eb19d/ML%20Explainability/CV%20Interpreter/CNN_activation_maximization.ipynb) using `MobileNetV2` and feature extraction techniques.
 - Learn to interpret the output of `CNN` models by using [saliency mapping techniques](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/fa17764aa8800c388d0d298b750c686757e0861e/ML%20Explainability/CV%20Interpreter/CNN_attribution_maps.ipynb).
 - Learn to [interpret the inner workings of a `CNN`](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/fa17764aa8800c388d0d298b750c686757e0861e/ML%20Explainability/CV%20Interpreter/CNN_attribution_maps_with_LIME.ipynb) using the `LIME` (_Local Interpretable Model-Agnostic Explanations_) library.
 - _Diffusion models_ are one of the current _paradigms in synthetic data generation_ (especially when it comes to photorealism). Learn how to [interpret diffusion models](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/fa17764aa8800c388d0d298b750c686757e0861e/ML%20Explainability/CV%20Interpreter/diffusion_interpreter.ipynb) with the `diffusers-interpret` library.
@@ -110,7 +110,7 @@ Join [AIRES at PUCRS](https://en.airespucrs.org/contato).
     year = {2023},
     publisher = {GitHub},
     journal = {GitHub repository},
-    note = {Last updated 19 April 2023},
+    note = {Last updated 24 April 2023},
 }
 ```
 
