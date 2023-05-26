@@ -70,6 +70,7 @@ Join [AIRES at PUCRS](https://en.airespucrs.org/contato).
 - Learn about how `word embeddings` are created, and how can you use them to perform interpretability analysis on text data/language models, by [implementing a `word2vector` model](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/e5ec7cc503d532c44ecb29df1583d4e3cca4cb81/ML%20Explainability/NLP%20Interpreter/word2vec.ipynb).
 - Discover how language models embed meaning into vectors by [exploring the similarities and the geometric landscape](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/2da13285e775560b432a1e3d3560a49e37db31d0/ML%20Explainability/NLP%20Interpreter/investigating_word_embeddings.ipynb) of `word embeddings`.
 - Learn to [explore text datasets using `Text Mining`](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/fa17764aa8800c388d0d298b750c686757e0861e/ML%20Explainability/NLP%20Interpreter/text_mining.ipynb). Here you will learn simple techniques to create visualization tools to interpret the distribution of patterns (_e.g., sentiment, word recurrence_) in a text corpus.
+- Learn about the inner workings of GPT-style architectures using the [`TransformerLens`](https://github.com/neelnanda-io/TransformerLens) library, and [explore attention patterns inside GPT-2](xxx).
 - Ever wanted to build your own _language model playground?_ Here you can find a working [dash.app that allows you to interact with LM and Report your findings](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/fa17764aa8800c388d0d298b750c686757e0861e/ML%20Explainability/NLP%20Playgroung/playground.py). The UI was created using `Dash` and `Flask`. You can [download different models](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/fa17764aa8800c388d0d298b750c686757e0861e/ML%20Explainability/NLP%20Playgroung/get_transformer.ipynb) from the `Hugging Face` library and feed this Playground with the model you so choose. This playground was specifically created for experiments involving `prompt engineering` and `human feedback`. You can find an online working example of this application in [this link](https://playground.airespucrs.org/language-model-playground).
 
 ## Interpretability in Classification & Prediction with Tabular Data 🔎📊
@@ -83,6 +84,7 @@ Join [AIRES at PUCRS](https://en.airespucrs.org/contato).
 - When dealing with certain datasets, like the `Adult Census Dataset` we learn that [interpreting fairness metrics, and choosing which one to use](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/fa17764aa8800c388d0d298b750c686757e0861e/ML%20Fairness/fairness_income.ipynb), can be a challenge.
 - Use the [`AIF360`](https://aif360.mybluemix.net/) library to correct a dataset (_- the Hogwarts case -_) using the [Disparate Impact Remover](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/fa17764aa8800c388d0d298b750c686757e0861e/ML%20Fairness/disparate_impact_remove_Hogwarts.ipynb).
 - Learn how to apply the [`Ceteris paribus`](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/fa17764aa8800c388d0d298b750c686757e0861e/ML%20Fairness/ceteris_paribus_profiles.ipynb) principle to create a "_What-if_" model. Evaluate a classifier using `Counterfactual Fairness`.
+- `CelebA` is a famous dataset to experiment with facial recognition. [Search for biases in a CNN trained to detect smiles](xxx) using `CelebA`.
 
 ## Cybersecurity 👾
 
@@ -111,7 +113,7 @@ Join [AIRES at PUCRS](https://en.airespucrs.org/contato).
     year = {2023},
     publisher = {GitHub},
     journal = {GitHub repository},
-    note = {Last updated 03 May 2023},
+    note = {Last updated 26 May 2023},
 }
 ```
 
