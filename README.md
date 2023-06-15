@@ -85,7 +85,7 @@ Join [AIRES at PUCRS](https://en.airespucrs.org/contato).
 - Use the [`AIF360`](https://aif360.mybluemix.net/) library to correct a dataset (_- the Hogwarts case -_) using the [Disparate Impact Remover](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/fa17764aa8800c388d0d298b750c686757e0861e/ML%20Fairness/disparate_impact_remove_Hogwarts.ipynb).
 - Learn how to apply the [`Ceteris paribus`](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/fa17764aa8800c388d0d298b750c686757e0861e/ML%20Fairness/ceteris_paribus_profiles.ipynb) principle to create a "_What-if_" model. Evaluate a classifier using `Counterfactual Fairness`.
 - `CelebA` is a famous dataset to experiment with facial recognition. [Search for biases in a CNN trained to detect smiles](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/f34761121dccd4b4a8a272ce69e6bf7c81ddb6e5/ML%20Fairness/fair_metrics_celeba.ipynb) using `CelebA`.
-- Generative models are a big thing nowadays, especially in image and language generation. Learn to perform a [simple bias analysis in generative language models](xxx) using `transformers`.
+- Generative models are a big thing nowadays, especially in image and language generation. Learn to perform a [simple bias analysis in generative language models](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/60971f7bdbf21fe140cffb36b3bfe5dbf8c5c848/ML%20Fairness/nlp_fairness_distilgpt2.ipynb) using `transformers`.
 
 ## Cybersecurity 👾
 
