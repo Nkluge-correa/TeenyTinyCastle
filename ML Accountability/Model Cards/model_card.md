@@ -32,7 +32,7 @@ Contato: [nicholas@airespucrs.org](mailto:nicholas@airespucrs.org).
 
 ### Citar como
 
-```MarkDown
+````MarkDown
 
 "@misc{teenytinycastle,
 doi = {10.5281/zenodo.7112065},
@@ -45,7 +45,7 @@ journal = {GitHub repository},
 note = {Last updated 14 October 2022},
 }"
 
-```
+````
 
 ## USO PRETENDIDO
 
@@ -60,13 +60,13 @@ note = {Last updated 14 October 2022},
 2. Os dados utilizados no desenvolvimento deste modelo possuem uma distribuição tendenciosa no que diz respeito ao atributo gênero. Aproximadamente 70% das amostras possuem o atributo sensível "Masculino", e aproximadamente 68% das amostras que receberam uma classificação positiva ("Aprovado") possuem o atributo sensível "Masculino".
 
 ## MÉTRICAS
-
+  
 1. A métrica de performance utilizadas foi de acurácia, onde o modelo alcançou 0.83 (83.33%). A maior parte das classificações erradas feitas por este modelo são Falsos Positivos (amostras que pertencem a classe "Aprovado" sendo classificados como "Não Aprovado").
 
 2. A performance do modelo varia consideravelmente quando o avaliamos em diferentes subgrupos de atributos sensíveis ("Gênero").
 
 ## DECLARAÇÃO DE EQUIDADE
-
+  
 1. Este modelo foi avaliado com uma série de métricas de "fairness". Sendo elas: Statistical Parity Ratio, Equal Opportunity Ratio, Predictive Parity Ratio, Predictive Equality Ratio e Accuracy Equality Ratio. Se utilizarmos como medida de corte a regra dos 80% (a razão entre a classificação para a classe benéfica entre grupos privilegiados versus não-privilegiados deve ser menor igual a 80%). O modelo gerado não satisfaz tal condição para a métrica Statistical Parity. O modelo possui uma razão próxima a 1 (0.98) quando avaliado pela métrica Equal Opportunity, contudo, possui resultados insatisfatórios (abaixo do corte de 0.80) para todas as demais métricas utilizadas.
 
 ## RECOMENDAÇÕES
