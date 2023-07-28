@@ -8,6 +8,8 @@
 # E-mail: necmettin.carkaci@gmail.com
 # Source: https://github.com/ncarkaci/binary-to-image
 #
+# Example Usage: python binar2image.py /home/user/malware_folder
+#
 #-----------------------------------------------------------------------------------------#
 
 import os

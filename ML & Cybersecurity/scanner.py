@@ -6,6 +6,8 @@
 # Author: MitulNarotam
 # Source: https://github.com/MitulNarotam/Practical_Security
 #
+# Example Usage: python scanner.py -H d41d8cd98f00b204e9800998ecf8427e -o /home/user/output.txt
+#
 # -----------------------------------------------------------------------------------------#
 
 import requests
@@ -95,6 +97,5 @@ def VT_Request(key, hash, output):
         print(y + "\n\n" + hash + ' could not be searched. Please try again later.')
 
 
-# running the program
 if __name__ == '__main__':
     main()
