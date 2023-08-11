@@ -114,7 +114,7 @@ Join [AIRES at PUCRS](https://en.airespucrs.org/contato).
     year = {2023},
     publisher = {GitHub},
     journal = {GitHub repository},
-    note = {Last updated 28 July 2023},
+    note = {Last updated 11 August 2023},
 }
 ```
 
