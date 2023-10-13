@@ -34,7 +34,7 @@ Join [AIRES at PUCRS](https://en.airespucrs.org/contato).
 - Here you can find a notebook showing how to implement a `Feed-Forward Neural Network` using `NumPy`. You will [learn the inner workings of many of the pre-built functions available in libraries like `TensorFlow` and `Pytorch`](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/fa17764aa8800c388d0d298b750c686757e0861e/ML%20Intro%20Course/7_MNIST_numpy.ipynb).
 - For many practitioners, the "_Hello World!_" of Deep Learning is classifying one of the `MNIST` datasets. Here you can find a Basic `Keras` and `Tensor Flow` tutorial using the [Fashion-MNIST](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/fa17764aa8800c388d0d298b750c686757e0861e/ML%20Intro%20Course/8_Fashion_MNIST.ipynb) dataset.
 - But if you want to check the `Pytorch` implementation of the same algorithm we built in the last Keras/TensorFlow tutorial, go to [this notebook](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/fa17764aa8800c388d0d298b750c686757e0861e/ML%20Intro%20Course/9_MNIST_torch.ipynb).
-- `Hyperparameter optimization` is crucial for boosting the performance of deep learning models. Tune them right to improve accuracy, prevent overfitting, and get the most out of your model. [Learn how to perform hyperparameter optimization](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/fa17764aa8800c388d0d298b750c686757e0861e/ML%20Intro%20Course/10_hyperparameter_tuning.ipynb) using `Hyperopt` and `Hyperas`.
+- `Hyperparameter optimization` is crucial for boosting the performance of deep learning models. Tune them right to improve accuracy, prevent overfitting, and get the most out of your model. [Learn how to perform hyperparameter optimization](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/fa17764aa8800c388d0d298b750c686757e0861e/ML%20Intro%20Course/10_hyperparameter_tuning.ipynb) using the `KerasTuner`.
 - Get access to _all the datasets you might need_ during the beginning of your ML journey by using the [TensorFlow Datasets](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/fa17764aa8800c388d0d298b750c686757e0861e/ML%20Intro%20Course/11_using_tfds.ipynb).
 - Learn to keep track of your ML experiments using [`Tensorboard`](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/fa17764aa8800c388d0d298b750c686757e0861e/ML%20Intro%20Course/12_tensorboard_visualization.ipynb).
 - One of the most common applications of AI systems in industry is in creating `recommendation systems`. Learn how to [build three different types of recommendation systems with this notebook](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/fa17764aa8800c388d0d298b750c686757e0861e/ML%20Intro%20Course/13_recommender_systems.ipynb).
@@ -122,7 +122,7 @@ Alignment can be broadly defined as the process of making sure AI systems, like 
     year = {2023},
     publisher = {GitHub},
     journal = {GitHub repository},
-    note = {Last updated 15 September 2023},
+    note = {Last updated 13 October 2023},
 }
 ```
 

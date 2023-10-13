@@ -40,7 +40,7 @@ tensorflow_datasets
 scikit_image
 scipy
 opencv-python
-hyperas
+keras-tuner
 pefile
 capstone
 gymnasium
