@@ -4,7 +4,9 @@ Return to the [castle](https://github.com/Nkluge-correa/teeny-tiny_castle).
 
 `Python` is a high-level, interpreted programming language widely used in various fields such as `data science`, `web development`, `artificial intelligence`, and `automation`. It was first released in 1991. It has since become one of the most popular programming languages due to its simple syntax, ease of use, and vast libraries of pre-built modules that make development faster and more efficient. Overall, `Python` is a versatile and powerful programming language that continues to gain popularity among developers of all levels.
 
-![python](https://i.gifer.com/origin/25/25dcee6c68fdb7ac42019def1083b2ef_w200.gif)
+Python will be the main language used in the tutorials of the 🏰, which also can be used as Colab notebooks. However, if you wish to create your own Python workstation, this step-by-step guide is for you.
+
+> **Note:** This tutorial is only made for Windows users. If you use Linux or MacOS, there are [other resources availeble on the web](https://code.visualstudio.com/docs/python/python-tutorial). However, instaling Python on other OS is not much different, but we are going to focus on Windows in this tutorial since [windows is the most used OS out there](https://en.wikipedia.org/wiki/Usage_share_of_operating_systems).
 
 ## Checking if you have Python
 
@@ -39,9 +41,7 @@ operable program or batch file.
 
 Also, you might get this message if _python's directory has not been added to the path of the Environment Variables_. In this case, the easy solution is to uninstall Python and install it again correctly.
 
-## Installing Python on Windows 11
-
-**Note:** _Instaling Python on a MAC is not much different, but we are going to focus on Windows in this tutorial since [windows is the most used OS out there](https://en.wikipedia.org/wiki/Usage_share_of_operating_systems)._
+## Installing Python on Windows
 
 First, go to the [official website of Python](https://www.python.org/).
 
@@ -105,7 +105,7 @@ To download VS Code, go to [code.visualstudio.com](https://code.visualstudio.com
 
 From then on, it is a typical Windows installation. Accept the terms, go forward, and you are done. After the installation is finished, you will get the starting screen of VS Code.
 
-![vs-code-start](https://code.visualstudio.com/assets/docs/getstarted/tips-and-tricks/getstarted_page.png)
+<img src="https://ashutoshtripathicom.files.wordpress.com/2021/04/image-23.png" width=400 />
 
 On the left side of the window, there are a couple of icons. Click on the **"Extensions"** icon (_a square with its top right quadrant removed_). You can also use the shortcut `control + shift + x`.
 
