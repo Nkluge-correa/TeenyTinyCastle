@@ -120,7 +120,7 @@ Alignment can be broadly defined as the process of making sure AI systems, like 
     year = {2023},
     publisher = {GitHub},
     journal = {GitHub repository},
-    note = {Last updated 03 November 2023},
+    note = {Last updated 17 November 2023},
 }
 ```
 
