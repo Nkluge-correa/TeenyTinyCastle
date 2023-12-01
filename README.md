@@ -54,9 +54,10 @@ If you would like to enable your GPU to follow our notebooks, you will need to i
 
 Alignment can be broadly defined as the process of making sure AI systems, like ML models, can adhere to human preferences, and operate in a way that is both helpful (_aligned with our goals_) and harmless (_minimizes the potential adversarial outcomes of its outputs_).
 
-- In this repository, we made public a dataset ([Instruct-Aira Dataset](https://huggingface.co/datasets/nicholasKluge/instruct-aira-dataset)) for instruction-tuning LLMs, available in English and Portuguese.
+- In this repository, we made public a dataset ([Instruct-Aira Dataset](https://huggingface.co/datasets/nicholasKluge/instruct-aira-dataset)) for instruction-tuning LLMs, available in English, Portuguese, and Spanish.
 - In both these repositories ([Reward-Aira Dataset](https://huggingface.co/datasets/nicholasKluge/reward-aira-dataset) and [Toxic-Aira Dataset](https://huggingface.co/datasets/nicholasKluge/toxic-aira-dataset)) we created datasets used for preference modeling in English and Portuguese.
-- All models trained with these datasets (the `Aira-2` series) are available on [Hugging Face](https://huggingface.co/nicholasKluge), together with their code implementation.
+- All models trained with these datasets (the `Aira-2` series) are available on [Hugging Face](https://huggingface.co/nicholasKluge).
+- The code implementaton of the `Aira-2`series is availeble in this [repo](https://github.com/Nkluge-correa/Aira).
 
 ## Interpretability with CV 🔎🖼️
 
@@ -120,7 +121,7 @@ Alignment can be broadly defined as the process of making sure AI systems, like 
     year = {2023},
     publisher = {GitHub},
     journal = {GitHub repository},
-    note = {Last updated 17 November 2023},
+    note = {Last updated 01 December 2023},
 }
 ```
 
