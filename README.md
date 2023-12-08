@@ -3,7 +3,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7485126.svg)](https://doi.org/10.5281/zenodo.7485126)[
 ![made-with-python](https://camo.githubusercontent.com/f9010d0d18143896d2e496fe0e0c89056acab8229dbdf169f1d3a4759567fe63/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d616465253230776974682d507974686f6e2d3166343235662e737667)](https://www.python.org/)
 
-<img src="logo\teeny-tiny-castle-logo.jfif" alt="A logo for a GitHub repository called Teeny-Tiny Castle with a machine learning theme and a little robot. The logo is a cartoon illustration of a blue robot with a square head and round body in a pink and purple castle with a blue moat. The castle has a banner that reads “Teeny-Tiny Castle” in a handwritten font. The background is dark purple with stars and trees." height="400">
+<img src="./logo/teeny-tiny-castle-logo.jfif" alt="A logo for a GitHub repository called Teeny-Tiny Castle with a machine learning theme and a little robot. The logo is a cartoon illustration of a blue robot with a square head and round body in a pink and purple castle with a blue moat. The castle has a banner that reads “Teeny-Tiny Castle” in a handwritten font. The background is dark purple with stars and trees." height="400">
 
 AI Ethics and Safety are (_relatively_) new fields, and their tools (and how to handle them) are still _not known to most of the development community_. To address this problem, we created the `Teeny-Tiny Castle`, an open-source repository containing "_Educational tools for AI Ethics and Safety Research_." There, the developer can find many examples of how to use programming tools to deal with various problems raised in the literature (e.g., algorithmic discrimination, model opacity, etc.).
 
@@ -121,7 +121,7 @@ Alignment can be broadly defined as the process of making sure AI systems, like 
     year = {2023},
     publisher = {GitHub},
     journal = {GitHub repository},
-    note = {Last updated 02 December 2023},
+    note = {Last updated 08 December 2023},
 }
 ```
 
