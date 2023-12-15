@@ -42,7 +42,7 @@ If you would like to enable your GPU to follow our notebooks, you will need to i
 - Generative models have been a focus in ML in recent years. [Create your own `language model`](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Intro%20Course/17_text_generation.ipynb) using a miniature version of the GPT architecture.
 - Among the different techniques that we find within Machine Learning, `Reinforcement Learning` deserves some introduction. As much as this methodology is _not yet mainstream_, RL was the paradigm responsible for creating some of the most _[general](https://arxiv.org/abs/2003.13350) and [proficient](https://arxiv.org/abs/1712.01815) agents of [today](https://www.nature.com/articles/s41586-021-03819-2)_. If you want to understand some of the basics behind RL, we have provided two notebooks where we trained an agent to deal with the [`FrozenLake`](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Intro%20Course/18_Q_learning.ipynb).
 - Training and testing ML models are only a part of the [`MLOps`](https://en.wikipedia.org/wiki/MLOps) cycle. Learn to [deploy simple AI applications](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Intro%20Course/19_quick_AI_app.ipynb) using `gradio`.
-- Master the basics of `MLOps` by [deploying our `XGBoost` regression model as an API](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Intro%20Course/20_ML_api_deployment.ipynb) using `FastAPI`.
+- Learn how to create a simple forecasting API by [deploying our `XGBoost` regression model as an `FastAPI`](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Intro%20Course/20_ML_api_deployment.ipynb).
 
 ## Accountability & Sutentability ♻️
 
@@ -121,7 +121,7 @@ Alignment can be broadly defined as the process of making sure AI systems, like 
     year = {2023},
     publisher = {GitHub},
     journal = {GitHub repository},
-    note = {Last updated 08 December 2023},
+    note = {Last updated 15 December 2023},
 }
 ```
 
