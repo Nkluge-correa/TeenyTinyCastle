@@ -57,7 +57,6 @@ codecarbon
 scikit-image
 aif360
 secml
-ydata_profiling
 google_play_scraper
 beautifulsoup4
 
