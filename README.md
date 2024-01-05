@@ -118,10 +118,10 @@ Alignment can be broadly defined as the process of making sure AI systems, like 
     url = {https://github.com/Nkluge-correa/teeny-tiny_castle},
     author = {Nicholas Kluge Corr{\^e}a},
     title = {Teeny-Tiny Castle},
-    year = {2023},
+    year = {2024},
     publisher = {GitHub},
     journal = {GitHub repository},
-    note = {Last updated 22 December 2023},
+    note = {Last updated 05 January 2024},
 }
 ```
 
