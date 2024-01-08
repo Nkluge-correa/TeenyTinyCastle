@@ -60,7 +60,7 @@ Learn how to generate model cards for transparent model reporting, explore the e
 
 ## Interpretability with CV 🖼️
 
-Understanding and interpreting the decisions made by machine learning models is essential for building trust and making informed decisions. In this course, we explore various techniques for interpretability in computer vision. From introducing Convolutional Neural Networks (CNNs) with CIFAR-10 to exploring feature visualization, maximum activation manipulation, saliency mapping, and using LIME for interpretation, each tutorial provides insights into the inner workings of CV models.
+Understanding and interpreting the decisions made by machine learning models is essential for building trust and making informed decisions. In this course, we explore various techniques for interpretability in computer vision. From introducing convolutional neural networks with CIFAR-10 to exploring feature visualization, maximum activation manipulation, saliency mapping, and using LIME for interpretation, each tutorial provides insights into the inner workings of CV models.
 
 | Tutorial                                                 | URL                                                                                                                                                                         | Colab |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
@@ -73,7 +73,7 @@ Understanding and interpreting the decisions made by machine learning models is 
 
 ## Interpretability with NLP 📚
 
-Unravel the complexities of Natural Language Processing (NLP) models and gain insights into their decision-making processes. From sentiment analysis and applying LIME explanations to LSTMs to exploring integrated gradients, interpreting BERT models, word2vector models, and embedding models, each tutorial provides a deep dive into NLP interpretability.
+Unravel the complexities of natural language processing models and gain insights into their decision-making processes. From sentiment analysis and applying LIME explanations to LSTMs to exploring integrated gradients, interpreting BERT models, word2vector models, and embedding models, each tutorial provides a deep dive into NLP interpretability.
 
 | Tutorial                                                 | URL                                                                                                                                                                                | Colab |
 |----------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
@@ -109,19 +109,26 @@ Advancing the discourse on machine learning fairness, the following tutorials de
 
 ## Cybersecurity 👾
 
-- Learn a little bit about `password security` by [cracking bad passwords encrypted whit unsafe hashes](https://github.com/Nkluge-correa/password_cracking_dash).
-- Learn how to use _Deep Learning_ to [classify/detect malware](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20&%20Cybersecurity/Malware_detection.ipynb), among other techniques to explore and evaluate possibly malicious software (_PE analysis, Reverse engineering, Automated Virus Scanning_).
+Explore the fusion of machine learning and cybersecurity as we demystify the process of classifying malware through deep neural networks and PE analysis.
+
+| Tutorial                                                      | URL                                                                                                                                              | Colab |
+|---------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------|
+| Classifying malware with deep neural networks and PE analysis | <a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20&%20Cybersecurity/Malware_detection.ipynb" target="_blank">LINK</a> | ❌    |
 
 ## Adversarial Machine Learning 🐱‍💻
 
-- Learn about the [pickle exploit](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/the_pickle_exploit.ipynb), and how it can be used to embed malicious code into ML models.
-- Evasion attacks are perhaps the best-known type of attack in ML safety. Also known as `adversarial examples`, [these attacks are carefully perturbed input samples that can completely throw off an ML model](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/evasion_attacks.ipynb). Learn to craft adversarial examples using the `SecML` toolkit.
-- Learn to [craft `adversarial examples` against `CNNs` through the `Fast Sign Gradient Method`](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/evasion_attacks_FGSM.ipynb) using nothing but the utilities of the Keras/TensorFlow libraries.
-- Language models are the cornerstone of many commercial applications. Learn how to [generate adversarial examples against language models](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/adversarial_text_attack.ipynb) using the `textattack` library.
-- Model `extraction attacks` pose a threat to intellectual property and privacy. Taking a proactive and adversarial approach to protecting ML systems, in this notebook, we [illustrate the inner workings of an extraction/cloning attack](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/model_extraction_nlp.ipynb).
-- Data `poisoning attacks`, like _label-flipping_ and _backdoor attacks_, can severely degrade model performance while giving an attacker the chance to introduce hidden functionalities and features into ML models. In [this notebook](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/data_poisoning_attacks.ipynb), you can learn about these types of attacks.
-- Adversarial training is one of the strategies that ML model developers can use to make their models more robust. In this notebook, you will [learn how to perform `adversarial training`](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/adversarial_training_cv.ipynb) (using _FGSM_) with `CNNs`.
-- And in this notebook, you will [learn how to perform `adversarial training` on language models](https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/adversarial_training_nlp.ipynb) using `textattack`.
+Within these tutorials, we navigate the intricate landscape of thwarting adversarial attacks and understanding their nuances. Explore the dark arts of exploiting pickle serialization, create adversarial examples with SecML and Textattack, and apply the fast sign gradient method against convolutional neural networks.
+
+| Tutorial                                            | URL                                                                                                                                               | Colab |
+|-----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-------|
+| Exploiting pickle serialization                     | <a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/the_pickle_exploit.ipynb" target="_blank">LINK</a>       | ❌     |
+| Creating adversarial examples with `SecML`          | <a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/evasion_attacks.ipynb" target="_blank">LINK</a>          | ❌     |
+| Applying the fast sign gradient method against CNNs | <a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/evasion_attacks_FGSM.ipynb" target="_blank">LINK</a>     | ❌     |
+| Creating adverarial examples with `textattack`      | <a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/adversarial_text_attack.ipynb" target="_blank">LINK</a>  | ❌     |
+| Extraction attacks via model clonning               | <a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/model_extraction_nlp.ipynb" target="_blank">LINK</a>     | ❌     |
+| Demonstrating poisoning attacks                     | <a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/data_poisoning_attacks.ipynb" target="_blank">LINK</a>   | ❌     |
+| Adversarial training for computer vision models     | <a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/adversarial_training_cv.ipynb" target="_blank">LINK</a>  | ❌     |
+| Adversarial training for language models            | <a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Adversarial/adversarial_training_nlp.ipynb" target="_blank">LINK</a> | ❌     |
 
 ## Cite as 🤗
 
