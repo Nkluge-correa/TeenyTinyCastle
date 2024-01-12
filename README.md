@@ -52,11 +52,11 @@ Whether you're a beginner or looking to refresh your skills, this course covers 
 
 Learn how to generate model cards for transparent model reporting, explore the environmental impact of your models with CO2 emission reports using CodeCarbon, and navigate the accuracy versus sustainability dilemma.
 
-| Tutorial                                   | URL                                                                                                                                                                    | Colab |
-|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
-| Model cards for model reporting            | <a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Accountability/Model%20Cards/model_card_generator.ipynb" target="_blank">LINK</a>         | ❌     |
-| CO2 emission reports with `CodeCarbon`     | <a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Accountability/CO2%20Emission%20Report/emission_tracker.ipynb" target="_blank">LINK</a>   | ❌     |
-| The accuracy versus sustainability dilemma | <a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Accountability/CO2%20Emission%20Report/carbon_emission_cv.ipynb" target="_blank">LINK</a> | ❌     |
+| Tutorial                                   | URL                                                                                                                                                                    | Colab                                                                                                                                                                                            |
+|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Model cards for model reporting            | <a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Accountability/Model%20Cards/model_card_generator.ipynb" target="_blank">LINK</a>         | <a href="https://colab.research.google.com/drive/1mnz-AbRYQua1bByOwxZwsFpySrJS6GJl" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> |
+| CO2 emission reports with `CodeCarbon`     | <a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Accountability/CO2%20Emission%20Report/emission_tracker.ipynb" target="_blank">LINK</a>   | ❌                                                                                                                                                                                                |
+| The accuracy versus sustainability dilemma | <a href="https://github.com/Nkluge-correa/teeny-tiny_castle/blob/master/ML%20Accountability/CO2%20Emission%20Report/carbon_emission_cv.ipynb" target="_blank">LINK</a> | ❌                                                                                                                                                                                                |
 
 ## Interpretability with CV 🖼️
 
@@ -141,7 +141,7 @@ Within these tutorials, we navigate the intricate landscape of thwarting adversa
     year = {2024},
     publisher = {GitHub},
     journal = {GitHub repository},
-    note = {Last updated 08 January 2024},
+    note = {Last updated 12 January 2024},
 }
 ```
 
