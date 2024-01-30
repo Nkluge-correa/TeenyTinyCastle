@@ -1,8 +1,12 @@
-# Teeny-Tiny Castle 🏰
+<div align="center">
+
+# Teeny-Tiny Castle: educational tools for AI Ethics and Safety research
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7485126.svg)](https://doi.org/10.5281/zenodo.7485126)
 
-<img src="./logo/teeny-tiny-castle-logo.jfif" alt="A logo for a GitHub repository called Teeny-Tiny Castle with a machine learning theme and a little robot. The logo is a cartoon illustration of a blue robot with a square head and round body in a pink and purple castle with a blue moat. The castle has a banner that reads “Teeny-Tiny Castle” in a handwritten font. The background is dark purple with stars and trees." height="400">
+<img src="./logo/logo.png" alt="A logo for a GitHub repository called Teeny-Tiny Castle with a machine learning theme and a little robot. The logo is a cartoon illustration of a blue robot with a square head and round body in a pink and purple castle with a blue moat. The castle has a banner that reads “Teeny-Tiny Castle” in a handwritten font. The background is dark purple with stars and trees." height="400">
+
+</div>
 
 AI Ethics and Safety are (_relatively_) new fields, and their tools (and how to handle them) are still _not known to most of the development community_. To address this problem, we created the **Teeny-Tiny Castle**, an open-source repository containing "_Educational tools for AI Ethics and Safety Research_." There, the developer can find many examples of how to use programming tools to deal with various problems raised in the literature (e.g., algorithmic discrimination, model opacity, etc.).
 
@@ -140,10 +144,14 @@ Within these tutorials, we navigate the intricate landscape of thwarting adversa
     year = {2024},
     publisher = {GitHub},
     journal = {GitHub repository},
-    note = {Last updated 12 January 2024},
+    note = {Last updated 30 January 2024},
 }
 ```
 
----
+## Funding
 
-This repository was built as part of the RAIES ([Rede de Inteligência Artificial Ética e Segura](https://www.raies.org/)) initiative, a project supported by FAPERGS - ([Fundação de Amparo à Pesquisa do Estado do Rio Grande do Sul](https://fapergs.rs.gov.br/inicial)), Brazil.
+The creation of this repository was funded by RAIES ([Rede de Inteligência Artificial Ética e Segura](https://www.raies.org/)). RAIES is a project supported by FAPERGS ([Fundação de Amparo à Pesquisa do Estado do Rio Grande do Sul](https://fapergs.rs.gov.br/inicial)) and CNPq ([Conselho Nacional de Desenvolvimento Científico e Tecnológico](https://www.gov.br/cnpq/)).
+
+## License
+
+Teeny-Tiny Castle is licensed under the Apache License, Version 2.0. See the [LICENSE](LICENSE) file for more details.
