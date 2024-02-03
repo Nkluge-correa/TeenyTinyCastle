@@ -145,7 +145,7 @@ Within these tutorials, we navigate the intricate landscape of thwarting adversa
     year = {2024},
     publisher = {GitHub},
     journal = {GitHub repository},
-    note = {Last updated 30 January 2024},
+    note = {Last updated 03 February 2024},
 }
 ```
 
