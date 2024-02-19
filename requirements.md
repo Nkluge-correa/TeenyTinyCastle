@@ -1,6 +1,6 @@
 # Requirements (`Python 3.9.13`)
 
-Return to the [castle](https://github.com/Nkluge-correa/teeny-tiny_castle).
+Return to the [castle](https://github.com/Nkluge-correa/TeenyTinyCastle).
 
 > **Note: Local installations are not required if you choose to run the Colab notebooks instead!**
 
@@ -64,4 +64,4 @@ beautifulsoup4
 
 ---
 
-Return to the [castle](https://github.com/Nkluge-correa/teeny-tiny_castle).
+Return to the [castle](https://github.com/Nkluge-correa/TeenyTinyCastle).

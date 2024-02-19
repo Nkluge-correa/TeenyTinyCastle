@@ -1,0 +1,18 @@
+# Machine Learning Fairness
+
+You can find lessons on ML fairness in this folder.
+
+Advancing the discourse on machine learning fairness, the following tutorials delve into diverse facets of this crucial domain. From applying fairness metrics on datasets like Credit Card and Adult Census to enforcing fairness using tools like AIF360, these tutorials guide you through the intricate landscape of addressing biases in machine learning models.
+
+| Tutorial                                             | GitHub                                                                                                                                                     | Colab                                                                                                                                                                                            |
+|------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Applying fairnes metrics on the Credit Cart Dataset  | <a href="https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Fairness/fair_metrics_Credit_card_approval.ipynb" target="_blank">LINK</a> | <a href="https://colab.research.google.com/drive/14F-XN4s95AgqDxrwdmB3Urk9vVQVi3GM" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> |
+| Applying fairnes metrics on the Adult Census Dataset | <a href="https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Fairness/fairness_income.ipynb" target="_blank">LINK</a>                   | <a href="https://colab.research.google.com/drive/10BcFbOU2RsKVF-o1wz40K-JNfhADE043" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> |
+| Enforcing fairnes with `AIF360`                      | <a href="https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Fairness/disparate_impact_remove_Hogwarts.ipynb" target="_blank">LINK</a>  | <a href="https://colab.research.google.com/drive/1xbVlJlEdJUbUIP2RWkvs4qyj23GT8ezl" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> |
+| Applying the principle of Ceteris paribus            | <a href="https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Fairness/ceteris_paribus_profiles.ipynb" target="_blank">LINK</a>          | <a href="https://colab.research.google.com/drive/17u12_U3BuNBk5ySuT54AXloKCn1LPAHQ" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> |
+| Applying fairnes metrics on the `CelebA` dataset     | <a href="https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Fairness/fair_metrics_celeba.ipynb" target="_blank">LINK</a>               | <a href="https://colab.research.google.com/drive/1Gvyb40OXeq0RPJA5WYVyr0S7bQWBGYe9" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> |
+| Investigating biases on text generation models       | <a href="https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Fairness/nlp_fairness_distilgpt2.ipynb" target="_blank">LINK</a>           | <a href="https://colab.research.google.com/drive/1wHqVMRXgHZv5djFBV6w-QARL_cBn-tyF" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> |
+
+---
+
+Return to the [castle](https://github.com/Nkluge-correa/TeenyTinyCastle).
