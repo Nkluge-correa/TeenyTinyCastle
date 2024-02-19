@@ -137,8 +137,7 @@ Within these tutorials, we navigate the intricate landscape of thwarting adversa
     title = {Teeny-Tiny Castle},
     year = {2024},
     publisher = {GitHub},
-    journal = {GitHub repository},
-    note = {Last updated 04 February 2024},
+    journal = {GitHub repository}
 }
 ```
 
