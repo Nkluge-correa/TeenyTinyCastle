@@ -49,7 +49,6 @@ pygame
 alibi
 dalex
 lime
-diffusers-interpret
 transformer_lens
 cmapy
 pandas
