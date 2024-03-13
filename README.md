@@ -14,7 +14,7 @@ At the moment, our repository has several examples of how to work ethically and 
 
 To run the notebooks just open them in your Google Drive as a **Colab Notebook**, or you can also follow our [Python and VS Code installation tutorial](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Intro-Course/1_python_VS_code_installation.md) if you want to run these notebooks on your own workstation. All requirements are specified in the [requirements.txt](requirements.txt) file. All notebooks were written using Python 3.9.13.
 
-> **Note: For more tools and metrics on the subject, we recommend the OECD Tools & Metrics catalog. This catalog also seeks to boost (in a much more extensive way) the popularity of tools and metrics to help AI actors build and deploy trustworthy AI systems.**
+> **Note: For more tools and metrics on the subject, we recommend the [OECD Tools & Metrics catalog](https://oecd.ai/en/catalogue/overview). This catalog also seeks to boost (in a much more extensive way) the popularity of tools and metrics to help AI actors build and deploy trustworthy AI systems.**
 
 ## AI Ethics ⚖️
 
