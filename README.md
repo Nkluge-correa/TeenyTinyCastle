@@ -8,11 +8,13 @@
 
 </div>
 
-AI Ethics and Safety are (_relatively_) new fields, and their tools (and how to handle them) are still _not known to most of the development community_. To address this problem, we created the **Teeny-Tiny Castle**, an open-source repository containing "_Educational tools for AI Ethics and Safety Research_." There, the developer can find many examples of how to use programming tools to deal with various problems raised in the literature (e.g., algorithmic discrimination, model opacity, etc.).
+AI Ethics and Safety are (_relatively_) new fields, and their tools (and how to handle them) are still _unknown to most of the development community_. To address this problem, we created the **Teeny-Tiny Castle**, an open-source repository containing "_Educational tools for AI Ethics and Safety Research_." There, the developer can find many examples of how to use programming tools to deal with various problems raised in the literature (e.g., algorithmic discrimination, model opacity, etc.).
 
 At the moment, our repository has several examples of how to work ethically and safely with AI. Our lines of focus are on issues related to **Accountability & Sustainability**, **Interpretability**, **Robustness/Adversarial**, and **Fairness**, all being worked through examples that refer to some of the most common contemporary AI applications (e.g., _Computer Vision, Natural language Processing, Classification & Forecasting_, etc.). You can also find an _introductory course on ML_ in the [ML Intro Course](https://github.com/Nkluge-correa/TeenyTinyCastle/tree/master/ML-Intro-Course) folder.
 
 To run the notebooks just open them in your Google Drive as a **Colab Notebook**, or you can also follow our [Python and VS Code installation tutorial](https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Intro-Course/1_python_VS_code_installation.md) if you want to run these notebooks on your own workstation. All requirements are specified in the [requirements.txt](requirements.txt) file. All notebooks were written using Python 3.9.13.
+
+> **Note: For more tools and metrics on the subject, we recommend the OECD Tools & Metrics catalog. This catalog also seeks to boost (in a much more extensive way) the popularity of tools and metrics to help AI actors build and deploy trustworthy AI systems.**
 
 ## AI Ethics ⚖️
 
