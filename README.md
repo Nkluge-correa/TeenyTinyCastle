@@ -54,7 +54,7 @@ Whether you're a beginner or looking to refresh your skills, this course covers 
 | Creating ML apps with `Gradio`                                           | <a href="https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Intro-Course/19_quick_AI_app.ipynb" target="_blank">LINK</a>                                           | <a href="https://colab.research.google.com/drive/1rghHhR4TShqkYk4qbZvg0N5oAku2USon" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> |
 | Deploying a forcasting model as an API with `FastAPI`                    | <a href="https://github.com/Nkluge-correa/TeenyTinyCastle/blob/master/ML-Intro-Course/20_ML_api_deployment.ipynb" target="_blank">LINK</a>                                      | <a href="https://colab.research.google.com/drive/1n5VqXUgwqPJaH7IRQltFaOl68-WYS7gU" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> |
 
-## Accountability and Sutentability ♻️
+## Accountability and Sustainability ♻️
 
 Learn how to generate model cards for transparent model reporting, explore the environmental impact of your models with CO2 emission reports using CodeCarbon, and navigate the accuracy versus sustainability dilemma.
 

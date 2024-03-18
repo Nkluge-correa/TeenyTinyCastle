@@ -1,6 +1,6 @@
-# Machine Learning Sutentability
+# Machine Learning Sustainability
 
-You can find ML Sutentability lessons in this folder, mainly focusing on practices like [emission tracking](../../ML-Accountability/CO2-Emission-tracking).
+You can find ML Sustainability lessons in this folder, mainly focusing on practices like [emission tracking](../../ML-Accountability/CO2-Emission-tracking).
 
 Explore the environmental impact of your models with CO2 emission reports using CodeCarbon, and navigate the accuracy versus sustainability dilemma.
 
