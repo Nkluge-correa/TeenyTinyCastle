@@ -140,6 +140,15 @@ Within these tutorials, we navigate the intricate landscape of thwarting adversa
     publisher = {GitHub},
     journal = {GitHub repository}
 }
+@article{correa2024eps,
+  doi = {10.1007/s43681-024-00469-8},
+  url = {https://link.springer.com/article/10.1007/s43681-024-00469-8},
+  author={Corr{\^e}a, Nicholas Kluge and Santos, James William and Galv{\~a}o, Camila and Pasetti, Marcelo and Schiavon, Dieine and Naqvi, Faizah and Hossain, Robayet and De Oliveira, Nythamar},
+  title = {Crossing the principle–practice gap in AI ethics with ethical problem-solving},
+  year = {2024},
+  publisher = {Springer},
+  journal = {AI and Ethics},
+}
 ```
 
 ## Funding
