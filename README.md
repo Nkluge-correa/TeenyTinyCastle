@@ -20,12 +20,13 @@ To run the notebooks, open them in your Google Drive as a **Colab Notebook**, or
 
 In pursuing responsible and ethical AI development, staying informed about the principles, risks, regulations, and challenges associated with artificial intelligence is essential. Explore the following resources to deepen your understanding of AI ethics.
 
-| Supporting resources                                                | URL                                                                                     |
-|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| Learn about AI principles in the WAIE dashboard                     | <a href="https://nkluge-correa.github.io/worldwide_AI-ethics/" target="_blank">LINK</a> |
-| Learn about the risks related to AI models                          | <a href="https://nkluge-correa.github.io/Model-Library/" target="_blank">LINK</a>       |
-| Get informed about AI regulation in Brazil                          | <a href="https://www.airespucrs.org/en/nota-tecnica-aires" target="_blank">LINK</a>     |
-| Learn about the problems related to facial recognition technologies | <a href="https://www.airespucrs.org/en/nota-tecnica-frt" target="_blank">LINK</a>       |
+| Supporting resources                                                | URL                                                                                         |
+|---------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| Learn about AI principles in the WAIE dashboard                     | <a href="https://nkluge-correa.github.io/worldwide_AI-ethics/" target="_blank">LINK</a>     |
+| Learn about the risks related to AI models                          | <a href="https://nkluge-correa.github.io/Model-Library/" target="_blank">LINK</a>           |
+| Get informed about AI regulation in Brazil                          | <a href="https://www.airespucrs.org/en/nota-tecnica-aires" target="_blank">LINK</a>         |
+| Learn about the problems related to facial recognition technologies | <a href="https://www.airespucrs.org/en/nota-tecnica-frt" target="_blank">LINK</a>           |
+| Learn about the EPS methodology for ethical and safe AI development | <a href="https://github.com/Nkluge-correa/ethical-problem-solving" target="_blank">LINK</a> |
 
 ## Machine Learning Introduction Course 📈
 
